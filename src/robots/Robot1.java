@@ -30,8 +30,8 @@ public class Robot1 extends AdvancedRobot{
 	public void onScannedRobot(ScannedRobotEvent e) {
 	    String name = e.getName();
 	    LinkedHashMap<String, Double> ehm = enemyHashMap;
-	    System.out.println(e.getName());
-	    System.out.println(enemyHashMap.toString());
+	    out.println(e.getName());
+	    out.println(enemyHashMap.toString());
 	 
 	    ehm.put(name, getHeadingRadians() + e.getBearingRadians());
 	 
