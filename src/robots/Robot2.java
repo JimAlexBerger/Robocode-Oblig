@@ -22,6 +22,8 @@ public class Robot2 extends AdvancedRobot{
 		//Hvert tick
 	    while(true) {
 	    	
+	    	fire(1);
+	    	
 	    	//Radar som kun roterer
 	        turnRadarRightRadians(Double.POSITIVE_INFINITY);
 	        scan();
@@ -54,6 +56,8 @@ public class Robot2 extends AdvancedRobot{
 	
 	//Funksjon som kjører når man scanner en robot
 	public void onScannedRobot(ScannedRobotEvent e){
+		fire(1);
+		
 		//Vinkelen mellom roboten og fienden
 		double vinkelMotFiende = e.getBearing();
 		
