@@ -14,7 +14,7 @@ public class Painbringer {
 					ahead(50.5);
 					turnRight(90);
 					fire(1);
-				}
+				}////hei jim
 			
 		}
 
